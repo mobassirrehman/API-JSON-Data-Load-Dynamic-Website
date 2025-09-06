@@ -20,7 +20,7 @@ const displayPosts = (posts) => {
   //   get the container and empty the conatiner
   const postsContainer = document.getElementById("post-container");
   postsContainer.innerHTML = "";
-  posts.forEach((post) => {
+  posts.slice(0, 10).forEach((post) => {
     //2.create element
     const postCard = document.createElement("div");
     postCard.innerHTML = `<div class="post-card">
